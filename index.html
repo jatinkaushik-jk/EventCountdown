@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Event Countdown</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="countdown">
+            <div class="para">
+                <h1></h1>
+            </div>
+            <div class="counts">
+                <div><input id="days" type="number" readonly><label for="days">Days</label></div>
+                <div><input id="hrs" type="number" readonly><label for="hrs">Hours</label></div>
+                <div><input id="mns" type="number" readonly><label for="mns">Minutes</label></div>
+                <div><input id="ss" type="number" readonly><label for="ss">Seconds</label></div>
+            </div>
+        </div>
+    </div>
+    <form class="form">
+        <label for="eventName">Event Name <br>
+            <input type="text" name="eventName" id="eventName">
+        </label>
+        <div
+            style="display: flex; flex-direction: row; gap: 1.5rem; flex-wrap: wrap; align-items: center; justify-content: center;">
+            <label for="eventDate">Event Date
+                <input type="date" name="eventDate" id="eventDate" required>
+            </label>
+            <label for="eventTime">Event Time
+                <input type="time" name="eventTime" id="eventTime" required>
+            </label>
+        </div>
+        <button type="submit" id="submitBtn">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

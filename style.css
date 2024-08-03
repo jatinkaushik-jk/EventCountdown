@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: max-content;
+  /* overflow: hidden; */
+}
+
+::selection {
+  border: none;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(rgb(45, 45, 45), rgb(16, 16, 16), rgb(0, 0, 0));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown {
+  width: 100%;
+  height: 100%;
+  color: antiquewhite;
+  display: grid;
+  row-gap: 2rem;
+  place-content: center;
+  place-items: center;
+}
+
+.para {
+  text-align: center;
+  text-wrap: nowrap;
+  font-size: 1rem;
+  line-height: 2.6rem;
+}
+
+.counts {
+  width: 90%;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.25rem;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.counts div {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  color: antiquewhite;
+  text-align: center;
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+
+.counts div input {
+  font-size: xxx-large;
+  font-size: -webkit-xxx-large;
+  width: -webkit-fill-available;
+  background: none;
+  border: none;
+  color: antiquewhite;
+  text-align: center;
+  cursor: pointer;
+}
+
+.form {
+  padding: 2px;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0.6rem);
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: x-large;
+  font-weight: 800;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  row-gap: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid white;
+  box-shadow: 0 0 10px #808080;
+  text-wrap: nowrap;
+  overflow-x: hidden;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+  color: antiquewhite;
+  text-shadow: 0 0 1px #808080;
+}
+
+.form input {
+  padding: 0.3rem;
+  margin: 0.2rem;
+  font-size: large;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+#submitBtn {
+  background-color: transparent;
+  color: antiquewhite;
+  padding: 0.5rem;
+  padding-inline: 1rem;
+  font-size: large;
+  font-weight: 500;
+  border: 2px solid antiquewhite;
+  border-radius: 0.3rem;
+  letter-spacing: 0.08rem;
+  cursor: pointer;
+}
+
+#submitBtn:hover {
+  background-color: antiquewhite;
+  font-weight: 600;
+  color: black;
+}
+
+@media (width <=760px) {
+  .para {
+    font-size: 0.8rem;
+  }
+
+  .counts div {
+    width: 15%;
+  }
+}
+
+@media (width <=450px) {
+  .para {
+    font-size: 0.6rem;
+  }
+
+  .counts div input {
+    font-size: xx-large;
+  }
+}
